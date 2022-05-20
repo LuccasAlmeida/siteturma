@@ -1,0 +1,275 @@
+/* crtl + ; - para abrir comentario */
+/* linkar css com html */
+
+/* CSS Document - arquivo css sempre é iniciado com declaração */
+
+/* zerar margem  */
+/* entre um elemento e outro margin */
+/* entre um texto e o elemento padding, internamente */
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+/* degrade de cor */
+
+body {
+        background-image: url(../imagens/R.jfif);
+        background-size: 100%;
+        background-attachment: fixed;
+        /* body{background: linear-gradient(#b19b8a, #a1714f) ; */
+        font-family: 'Times New Roman', Times, serif;
+}
+
+/* # = id */
+
+#container {
+        width: 80%;
+        min-width: 800px;
+        margin: 3% auto;
+        /* border: solid 1px #000; */
+        box-shadow: 1px 1px 6px 6px #FFFBE9;
+        /* box-shadow: 1px 1px 4px 4px #FFFBE9; */
+        background-color: #87cefa;
+        /* deixar cor transparente */
+        /* background-color: rgb(227, 202, 165, 0.5);  */
+        border-radius: 5% 5%
+}
+
+/* definindo fonte do h1 e cor de fundo do h2 */
+/* por margem em sentido horario, cima, direita, baixo, esquerda */
+
+h1 {
+        font-size: 80px;
+        color: #1C0A00;
+
+        /* margin-top: 1%;
+          margin-right: 0;
+          margin-bottom: 1%;
+          margin-left: 35%; */
+
+        margin: 0.5% 30%;
+
+        /* borda */
+
+        /* border-bottom-color: cyan;
+          border-bottom-width: 5px;
+          border-bottom-style: groove;
+          border-bottom:inset cyan 5px; */
+
+        /* border:rgb(128, 234, 241) 5px groove;
+          outline: 7px inset #24FFF8; */
+
+        /* cor no fundo */
+        /* background-color:#24FFF8; */
+        /* arredondar borda */
+        /* border-radius: 10% 33%; */
+        /* colocar sombra em texto */
+        text-shadow: 8px 8px 20px;
+        /* box-shadow: 8px 8px 20px; */
+        text-align: center;
+
+
+}
+
+
+/* nav{background-color: cadetblue;} */
+
+/* letter-spacing - separando caracteres */
+/* text-tranform - deixa texto maisc ou minusc ou capitalize */
+#superior ul {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+}
+
+#superior ul li {
+        display: inline-block;
+        /* background-color:rgb(248, 248, 248); */
+        padding: 1% 1%;
+        margin: 7px 2px 0 0;
+        border-radius: 15% 15%;
+        transition: 1s;
+}
+
+#superior ul li:hover {
+        background-color: #FFFBE9;
+}
+
+#superior ul li {
+        border: solid 2px #409dc4;
+}
+
+#superior ul li a {
+        color: black;
+        text-decoration: none;
+}
+
+#superior ul li a:hover {
+        text-decoration: underline;
+        font-size: 17px;
+        /* transition: 1s; */
+}
+
+
+
+h2 {
+        background-color: #409dc4;
+        text-align: center;
+        margin: 0% 4% 0.5% 10%;
+}
+
+/* centralizar imagens */
+figure {
+        text-align: center;
+}
+
+#imagens_superior img {
+        margin: 1% 0.5%;
+        opacity: 0.4;
+        box-shadow: 5px 5px 3px #000;
+        transition: 1s;
+}
+
+
+/* destacar a cor quando por o mouse em cima */
+#imagens_superior img:hover {
+        opacity: 1;
+}
+
+
+
+#principal {
+        display: flex;
+        padding: 1% 0 2% 5%;
+}
+
+article {
+        width: 77%;
+}
+
+/* border: solid 1px #000;} */
+article p {
+        margin: 1% 1% 0 0;
+        padding: 0.5% 0 1% 0;
+}
+
+
+aside {
+        width: 20%;
+}
+
+/* border: solid 1px #000;} */
+aside p {
+        padding: 0.5% 0 2% 0;
+}
+
+aside div h2 {
+        margin: 0% 2% 2% 0;
+}
+
+aside ul li {
+        padding: 3% 0;
+}
+
+aside ul li a {
+        color: black;
+        text-decoration: none;
+        border-bottom: solid 1px #000;
+}
+
+aside li {
+        list-style: none;
+}
+
+#web h2 {
+        margin: 6% 0 0 0;
+}
+
+#busca h2 {
+        margin: 3% 0 5% 0;
+}
+
+#inferior ul {
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+}
+
+#inferior li {
+        display: inline-block;
+        /* background-color:rgb(248, 248, 248); */
+        padding: 1% 1%;
+        margin: 7px 2px 0 0;
+        border-radius: 15% 15%;
+        transition: 1s;
+}
+
+#inferior ul li:hover {
+        background-color: #FFFBE9;
+}
+
+#inferior ul li {
+        border: solid 2px #409dc4;
+}
+
+#inferior ul li a {
+        color: black;
+        text-decoration: none;
+}
+
+#inferior ul li a:hover {
+        text-decoration: underline;
+        font-size: 17px;
+        transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* superior inferior = 1% - direira esquerda =1%
+   margin: 1% 1% */
+/* girar imagem */
+/* scale (2) - aumentar imagem */
+
+#redes_sociais p a {
+        border: solid 2px #409dc4;
+        padding: 1.8% 0.3% 0 0.3%;
+}
+
+#redes_sociais {
+        text-align: right;
+
+        padding: 0.5% 2% 0.5% 0;
+}
+
+#redes_sociais img:hover {
+        transform: rotate(180deg) scale(1.5);
+        transition: 2s;
+}
+
+/* css3 generator - efeitos css */
+/* fontes.google.com -  criar pasta "fontes" - fonte SpaceAge
+#font-face{
+        font-family: "SpaceAge";
+        src: url("../Fontes/Kalam-Bold.tft");
+        usar duas fontes repetir ! */
+
+
+/* estilo para pagina sobre */
+
+video {
+        width: 113%;
+}
+

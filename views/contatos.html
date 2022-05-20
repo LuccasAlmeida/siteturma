@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+
+
+        body{
+            background-color: #add9e6;
+}
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+ 
+        #formulario{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 80px;
+            border-radius: 15px;
+            }
+
+        input{
+            padding: 5px;
+            border-radius: 5px ;
+            border-color: blue;
+            width: 500px;
+        }
+        
+        .dt{            
+            padding: 5px;
+            border-radius: 5px ;
+            border-color: blue;
+            width: 200px;}
+        .cp{
+            padding: 5px;
+            border-radius: 5px ;
+            border-color: blue;
+            width: 150px;
+        }
+        .ce{
+            padding: 5px;
+            border-radius: 5px ;
+            border-color: blue;
+            width: 130px;
+        }
+        .u{
+            padding: 5px;
+            border-radius: 5px ;
+            border-color: blue;
+            width: 30px;
+        }
+        
+        .bt{
+
+            padding: 5px;
+            border-radius: 5px ;
+            width: 60px;
+            text-align: center;
+            margin-left: 50px;
+
+        }
+        
+        .botaocep {
+            padding: 5px;
+            width: 120px;
+            border: none;
+            
+        }
+        .telx {
+            width: 250px
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    
+
+        <div id="formulario">
+
+            <form action="../controllers/envio.php" method="POST" name="contatos"
+        oninput="out_investimento.value=parseInt(rng_investimento.value)">
+        
+
+            <!-- <input tabindex="1"> tabindex para colocar a ordem do tab -->
+            <label for="nome">Nome :</label>
+            <input type="text" id="nome" name="txtNome" name="txtnome" placeholder="Digete seu nome">
+            <br><br>
+            
+            
+            <label for="mês">Data do Nascimento :</label>
+            <input class="dt" type="date" id="mês" name="txtMes">
+            
+            <br><br>
+
+
+            <label for="cpf">CPF :</label>
+            <input class="cp" type="text" id="cpf" name="txtCpf" maxlength="11" required placeholder="xxx.xxx.xxx-xx">
+            
+            <br><br>
+            
+            <label for="cep">Cep</label>
+            <input class="ce" type="text" id="cep" name="txtCep" maxlength="8" required placeholder="Informe o Cep">
+            <input class="botaocep" type="submit" id="enviar" name="btnEnviar" value="Buscar CEP">
+            
+            <br><br>
+            
+            <label for="end">Endereço :</label>
+            <input type="text" id="end" name="txtEnd" placeholder="Informe o Seu Endereço">
+            
+            <br><br>
+            
+            <label for="bai">Bairro :</label>
+            <input type="text" id="bai" name="txtBai" placeholder="Informe o Bairro">
+            
+            <br><br>
+            
+            <label for="cid">Cidade :</label>
+            <input type="text" id="cid" name="txtCid" placeholder="Informe a Cidade">
+            
+            <br><br>
+            
+            <label for="uf">UF :</label>
+            <input class="u" type="text" id="uf" name="txtUf" maxlength="2" placeholder="UF"> 
+            
+            <br><br>
+            
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="txtEmail" maxlength="30" required placeholder="Email">
+            
+            <br><br>
+            
+            <label for="tel">Telefone :</label>
+            <input class="telx" type="tel" id="tel" name="txtTel" maxlength="11" required placeholder="(xx) xxxxx-xxxx">
+          
+
+
+           <br><br><br>
+   
+            <input class="bt" type="submit" id="enviar" name="btnEnviar" value="Enviar">
+            <input class="bt" type="submit" id="listar" name="btnListar" value="Listar">
+            <input class="bt" type="reset" id="limpar" name="btnLimpar" value="Limpar">
+            
+    
+        </form>
+        
+        <br>
+        
+        <!-- <a href="../views/enviar.php"><button class="bt" type="submit" id="enviar" name="btnEnviar" value="Enviar">Listar</button></a> -->
+
+
+
+    </div>
+
+
+
+
+
+  
+
+
+
+</body>
+</html>
